@@ -134,5 +134,5 @@ def login():
         return "Invalid input."
 
 if __name__ == '__main__':
-    # Use 127.0.0.1 to avoid "getaddrinfo failed" errors
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    # Use 0.0.0.0 to allow external access
+    app.run(host='0.0.0.0', port=5000, debug=True)
